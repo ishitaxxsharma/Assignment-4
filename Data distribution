@@ -1,0 +1,9 @@
+# Histogram for age
+sns.histplot(df['age'], kde=True, bins=30)
+plt.title("Age Distribution")
+plt.show()
+
+# Countplot for class
+sns.countplot(x='class', data=df)
+plt.title("Passenger Class Distribution")
+plt.show()
