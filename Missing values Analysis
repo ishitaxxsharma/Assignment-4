@@ -1,0 +1,12 @@
+# Total missing values
+missing = df.isnull().sum()
+missing_percent = (missing / len(df)) * 100
+
+missing_df = pd.DataFrame({'Missing Values': missing, 'Percentage': missing_percent})
+print(missing_df[missing_df['Missing Values'] > 0])
+
+# Heatmap of missing values
+plt.figure(figsize=(10, 6))
+sns.heatmap(df.isnull(), cbar=False, cmap="viridis")
+plt.title("Missing Values Heatmap")
+plt.show()
