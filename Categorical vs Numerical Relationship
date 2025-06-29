@@ -1,0 +1,9 @@
+# Survival by sex
+sns.barplot(x='sex', y='survived', data=df)
+plt.title("Survival Rate by Sex")
+plt.show()
+
+# Survival by class
+sns.barplot(x='class', y='survived', data=df)
+plt.title("Survival Rate by Class")
+plt.show()
