@@ -1,0 +1,9 @@
+# Box plot for age
+sns.boxplot(x='class', y='age', data=df)
+plt.title("Age Distribution by Class")
+plt.show()
+
+# Box plot for fare
+sns.boxplot(x='class', y='fare', data=df)
+plt.title("Fare Distribution by Class")
+plt.show()
