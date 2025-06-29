@@ -1,0 +1,9 @@
+# Convert to numeric-only dataframe
+numeric_df = df.select_dtypes(include=[np.number])
+correlation = numeric_df.corr()
+
+# Heatmap
+plt.figure(figsize=(8, 6))
+sns.heatmap(correlation, annot=True, cmap='coolwarm', fmt=".2f")
+plt.title("Correlation Matrix")
+plt.show()
